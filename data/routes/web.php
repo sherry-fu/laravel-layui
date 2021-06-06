@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome',['name'=>'sherry']);
 });
+
+Route::any('test/test','testController@index')->name('test.index');
